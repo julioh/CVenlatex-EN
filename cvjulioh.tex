@@ -19,86 +19,70 @@
 %THE SOFTWARE.
 
 
+\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
-\documentclass[11pt,a4paper]{moderncv}
+% moderncv themes
+\moderncvstyle{casual}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
 
-% Temas de Moderncv
-\moderncvtheme[blue]{casual}                
-%Se pueden usar opcionalmente los siguientes colores 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
-% Tema Clasico
-%\moderncvtheme[green]{classic}                
+% character encoding
+\usepackage[utf8]{inputenc}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
-% Codificacion
-\usepackage[utf8]{inputenc}                   
-\usepackage[T1]{fontenc}
-\usepackage{lmodern} 
-\usepackage{graphicx}
-\usepackage{marvosym}
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
-% Ajustar margenes de la pagina
-\usepackage[scale=0.8]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
-%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
-%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+% personal data
+\firstname{Julio Cesar}
+\familyname{Hernández García}
+\title{Resumé - Julio Cesar Hernández García}               % optional, remove the line if not wanted
+\address{Urb. Campo Alegre, Calle la Arboleda Casa Nº37, Carvajal, Edo. Trujillo, Venezuela}{3101}    % optional, remove the line if not wanted
+\mobile{+58~(426)~279~9921}                     % optional, remove the line if not wanted
+\phone{+58~(271)~2444854}                      % optional, remove the line if not wanted
+%\fax{+3~(456)~789~012}                        % optional, remove the line if not wanted
+\email{jhernandezgar@gmail.com}                          % optional, remove the line if not wanted
+\homepage{www.julioh.com.ve}                    % optional, remove the line if not wanted
+%\extrainfo{additional information}            % optional, remove the line if not wanted
+%\photo[64pt][0.4pt]{picture}                  % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+\quote{Resume}                % optional, remove the line if not wanted
 
-% Informacion Personal
-\firstname{\huge Julio Cesar}
-\familyname{\huge Hernández García}
-\title{Resume - Julio Cesar Hernández García}
-\address{Urb. Campo Alegre, Calle la Arboleda Casa Nº37, Carvajal, Edo. Trujillo, Venezuela}
-\mobile{+584262799921}
-\phone{+582712444854} 
-%\fax{fax (optional)}                          % optional, remove the line if not wanted
-\email{jhernandezgar@gmail.com}                      % optional, remove the line if not wanted
-\homepage{www.julioh.com.ve}                % optional, remove the line if not wanted
-%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
-%\photo[64pt]{}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
-\quote{Resume }                 % optional, remove the line if not wanted
-%\quote{Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius -- and a lot of courage -- to move in the opposite direction.}% also optional
-
-%\renewcommand{\listsymbol}{{\fontencoding{U}\fontfamily{ding}\selectfont\tiny\symbol{'102}}} % define another symbol to be used in front of the list items
-
-% the ConTeXt symbol
-\def\ConTeXt{%
-  C%
-  \kern-.0333emo%
-  \kern-.0333emn%
-  \kern-.0667em\TeX%
-  \kern-.0333emt}
-
-% slanted small caps (only with roman family; the sans serif font doesn't exists :-()
-%\usepackage{slantsc}
-%\DeclareFontFamily{T1}{myfont}{}
-%\DeclareFontShape{T1}{myfont}{m}{scsl}{ <-> cork-lmssqbo8}{}
-%\usefont{T1}{myfont}{m}{scsl}Testing the font
-
-% command and color used in this document, independently from moderncv 
-\definecolor{see}{rgb}{0.5,0.5,0.5}% for web links
-\newcommand{\up}[1]{\ensuremath{^\textrm{\scriptsize#1}}}% for text subscripts
-% to show numerical labels in the bibliography; only useful if you make citations in your resume
-\makeatletter
-\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
-\makeatother
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
 
 % bibliography with mutiple entries
 %\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
 \begin{document}
-\maketitle
-%\makequote
+%\begin{CJK*}{UTF8}{gbsn}                     % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
 \section{Objetive}
-\cventry{Seeking a position as a System Administrator and a productive team member with a progressive company that provides opportunity for career growth and job satisfaction.}
+\cventry{}{}{}{}{}{Seeking a position as a System Administrator and a productive team member with a progressive company that provides opportunity for career growth and job satisfaction.}
 
 \section{Skills}
-\cventry{Strong communication and organizational skills, creativity, flexibility, reliability, a talent for team working, high emotional intelligence, social competencies and strong motivation for professional achievement, self-knowledge, and ability to handle conflict. Excellent abilities with web applications, Networks, software and hardware operation and maintenance.}
-\cventry{Strong knowledge and experience with Linux, Unix and Windows.}
-\cventry{Strong knowledge of Internet Technologies such as TCP/IP,VoIP,Ssh,Smtp DNS,Proxy,FTP,Webmail, Proxy servers, Reverse-proxy servers, Load Balancing, HTTP, LDAP.}
-\cventry{Experience supporting and deploying highly scalable applications written in PHP, HTML, CSS, Javascript, C++, Perl, Python}
-\cventry{Solid knowledge and experience of web servers such as Apache, Nginx, Cherokee and lighttpd}
-\cventry{Experience with automation and monitoring tools such as Puppet, Nagios, SNMP, Kickstart.}
+\cventry{}{}{}{}{}{Strong communication and organizational skills, creativity, flexibility, reliability, a talent for team working, high emotional intelligence, social competencies and strong motivation for professional achievement, self-knowledge, and ability to handle conflict. Excellent abilities with web applications, Networks, software and hardware operation and maintenance}
+\cventry{}{}{}{}{}{Strong knowledge and experience with Linux, Unix and Windows.}
+\cventry{}{}{}{}{}{Strong knowledge of Internet Technologies such as TCP/IP,VoIP,Ssh,Smtp DNS,Proxy,FTP,Webmail, Proxy servers, Reverse-proxy servers, Load Balancing, HTTP, LDAP.}
+\cventry{}{}{}{}{}{Experience supporting and deploying highly scalable applications written in PHP, HTML, CSS, Javascript, C++, Perl, Python}
+\cventry{}{}{}{}{}{Solid knowledge and experience of web servers such as Apache, Nginx, Cherokee and lighttpd}
+\cventry{}{}{}{}{}{Experience with automation and monitoring tools such as Puppet, Nagios, SNMP, Kickstart.}
 
 \section{Education}
 \cventry{2008--2012}{Management Specialist Science and Technology}{University Rafael Belloso Chacin}{}{}{}
 \cventry{2002--2008}{Computer Engineer}{University Valle del Momboy}{}{}{}
+
+\closesection{}
+\pagebreak{}
 
 \section{Additional Training}
 \cventry{2010}{English Instrumental}{University Valle del Momboy}{48 Hours}{made between 01/06 y 30/07/2010}{}
@@ -111,19 +95,13 @@
 \cventry{2003}{Component of English Academic}{University Valle del Momboy - VEN-USA}{253 Hours}{made between 01/04 y 14/10/2003}{}
 \cventry{2003}{Equipment Repair and Maintenance}{University Valle del Momboy}{8 Hours}{made between el 11/04/2003}{}
 
-\closesection{}
-\pagebreak{}
 \section{Work Experience}
-\cventry{2011-2012}{Systems Analyst and Programmer}{IUTEMBI - Instituto Universitario de Tecnología Mario Briceño Iragorry}{Development of the website, as well as virtual classroom management and other subsystems have.}{}{}.\hfill{\itshape\color{see}\footnotesize{}Actual Trabajo}
+\cventry{2011-2012}{Systems Analyst and Programmer}{IUTEMBI - Instituto Universitario de Tecnología Mario Briceño Iragorry}{Development of the website, as well as virtual classroom management and other subsystems have}{}{}.\hfill{\itshape\color{see}\footnotesize{}}
 \cventry{2009-2011}{Systems and Platform Manager}{University Valle del Momboy}{Software Development, Server and Network Management}{}{}.\hfill{\itshape\color{see}\footnotesize{}}
 \cventry{2007-2009}{Analyst and Technical Support}{Petróleos de Venezuela S.A }{}{}{Development and testing of software modules, on-site Technical Support}
 \cventry{2006-2007}{Thesis}{C.V.G. Electrificación del Caroní C.A. }{}{}{Design and specifications Proprietary Platform Migration towards Free Software, SCADA at the substations of CVG Electrification of the Caroni, CA}
 \cventry{2006}{Intern}{C.V.G. Electrificación del Caroní C.A.}{}{}{Web Development (PHP,MySQL), modules for providers, staff and Induction Guide Plant Division Caruachi.}
 \cventry{2004-2006}{Scholar in Computer Lab}{University Valle del Momboy}{}{}{Maintenance, Support, Networking, Administration Servers (Proxy, DNS, WEB, Mail, FTP) in Centos Linux.}
-
-\section{Idiomas}
-\cvlanguage{Spanish}{Native}{}
-\cvlanguage{English}{Average}{}
 
 \closesection{}
 \pagebreak{}
@@ -148,10 +126,10 @@
 \cventry{2004}{Assistant}{Event}{University Valle del Momboy}{\textit{IV Congress Expotecnologia}}{Trujillo - Venezuela}
 \cventry{2003}{Assistant}{Event}{University Valle del Momboy}{\textit{VI Conference on Sustainable Human Development}}{Trujillo - Venezuela}
 \cventry{2003}{Assistant}{Event}{University Valle del Momboy}{\textit{III Congress Expotecnologia}}{Trujillo - Venezuela}
-\cventry{2002}{Assistant}{Event}{Gerenplanif}{\textit{I Binational conference}}{Merida - Venezuela}
+\cventry{2002}{Assistant}{Event}{Gerenplanif}{\textit{I Binational Conference}}{Merida - Venezuela}
 \cventry{2002}{Assistant}{Event}{University Valle del Momboy}{\textit{V Conference on Sustainable Human Development}}{Trujillo - Venezuela}
 \cventry{2002}{Assistant}{Event}{University Valle del Momboy}{\textit{I Technology Days in Municipal Management}}{Trujillo - Venezuela}
-\cventry{2002}{Assistant}{Event}{University Centroccidental Lisandro Alvarado}{\textit{XI days Infociencia}}{Lara - Venezuel}
+\cventry{2002}{Assistant}{Event}{University Centroccidental Lisandro Alvarado}{\textit{XI Conferenc Science and Technology}}{Lara - Venezuela}
 
 \closesection{}
 \pagebreak{}
@@ -164,4 +142,32 @@
 \cvcomputer{Programming A.I.}{CLIPS, Scheme, Prolog.}{Scripting}{Bash Scripting, C-Shell, PHP Avanzado.}
 \cvcomputer{Web Design}{HTML, XML, XSLT, XQuery, XPath, CSS.}{Database}{MySQL, PostgreSQL, Oracle, SQLserver.}
 
+\section{Languages}
+\cvlanguage{Spanish}{Native}{}
+\cvlanguage{English}{Average}{}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                   % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}              % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}              % 'publications' is the name of a BibTeX file
+
+\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+
+
+%\clearpage\end{CJK*}                         % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
 \end{document}
+
+%% end of file `cvjulioh.tex'.
