@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2017.6.3)  3 JUN 2017 22:33
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2017.6.3)  4 JUN 2017 20:48
 entering extended mode
  %&-line parsing enabled.
 **cvjulioh.tex
@@ -483,7 +483,7 @@ Package: geometry 2008/12/21 v4.2 Page Geometry
 )
 ! Undefined control sequence.
 l.48 \homepage
-              {{Resumé - Julio Cesar Hernández García}                   ...
+              {Resumé - Julio Cesar Hernández García}                    ...
 
 ? R
 OK, entering \nonstopmode...
@@ -494,8 +494,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.48 \homepage{{R
-                 esumé - Julio Cesar Hernández García}                   ...
+l.48 \homepage{R
+                esumé - Julio Cesar Hernández García}                    ...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1104,18 +1104,14 @@ No file cvjulioh.bbl.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
- )
-(\end occurred inside a group at level 1)
-
-### simple group (level 1) entered at line 48 ({)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
  5290 strings out of 495062
- 75372 string characters out of 1182645
- 149180 words of memory out of 3000000
+ 75373 string characters out of 1182645
+ 148808 words of memory out of 3000000
  8349 multiletter control sequences out of 15000+50000
  52436 words of font info for 46 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 45i,13n,49p,416b,839s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 45i,13n,49p,416b,339s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on cvjulioh.dvi (5 pages, 23756 bytes).
